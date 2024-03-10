@@ -218,6 +218,29 @@ questions:
       If you want to use NixOS but can't use NixOS,
       please tell us what prevents it and what would help you.
     type: text
+  # This year, we try to assess how people discovered Nix
+  - prompt: Did you hear about Nix or NixOS first?
+    type: single
+    choices:
+      - Nix
+      - NixOS
+      - both at the same time
+  - prompt: How did you find out about it?
+    type: single
+    choices:
+      - At work
+      - In my education (School/University/...)
+      - From a friend
+      - YouTube
+      - Reddit
+      - Hacker News
+      - Twitter/X
+      - LinkedIn
+      - Other social medias
+      - On a blog
+      - Academic Research (referenced in paper, conference talk)
+      - Searching (e.g. on Google)
+  - 
   # Final question to get meta feedback on the survey from participants
   - prompt: How can we improve this survey?
     type: text
