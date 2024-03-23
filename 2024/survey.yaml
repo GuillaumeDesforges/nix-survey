@@ -136,6 +136,51 @@ questions:
     choices:
       - I use Nix for personal projects.
       - I use Nix at work.
+  - prompt: |
+      Which user types do you identify with?
+    
+      - Enthusiast: You love the idea behind Nix, but don’t necessarily run NixOS as a daily driver. Maybe you spread the word among friends and coworkers. Maybe you are interested in or enthusiastic about any of the following:
+          - Free and open source software
+          - Linux
+          - Functional programming
+          - Repeatable builds
+          - Home automation
+          - Online communities
+      - Explorer: You’re here because you because you’re curious about Nix, how it works, and if it’s something for you. Maybe you just want to learn new things. Maybe you identify yourself as:
+          - Distro-hopper
+          - Nix-curious developer
+          - Student of a technical field
+          - Educator
+          - Academic researcher
+      - Pragmatist: You use Nix to get things done or boost your team’s productivity, you learn Nix to grow your career opportunities, or you have to use Nix on the job because someone said so. Maybe you identify yourself as:
+          - System administrator
+          - Employee developer
+          - DevOps engineer
+          - Natural scientist
+          - Open source software author
+          - Early-career professional
+      - Contributor: You work or want to work on the Nix ecosystem rather than just with it. You are at least one of the following:
+          - Aspiring contributor
+          - Novice contributor
+          - Drive-by contributor
+          - Package maintainer
+          - Code owner
+          - Community team member
+          - Sponsor
+      - Decision-maker: You make the strategic decisions for your team or company: which technologies to adopt, which skills to train your employees in, which projects to support or invest in, which services or products to offer. Maybe you’re a:
+          - Entrepreneur
+          - Team lead
+          - Software architect
+          - CTO
+          - Sales executive
+          - Public service administrator
+    type: multiple
+    choices:
+      - Enthusiast
+      - Explorer
+      - Pragmatist
+      - Contributor
+      - Decision-maker
   - prompt: On which operating systems do you use Nix currently?
     type: multiple
     type: 
@@ -240,7 +285,36 @@ questions:
       - On a blog
       - Academic Research (referenced in paper, conference talk)
       - Searching (e.g. on Google)
-  - 
+  - prompt: Which objects do you interact with or search for most often across the ecosystem?
+    type: ranking
+    choices:
+      - Package search (package names, program names)
+      - Option search (option names, option documentation)
+      - Configuration examples
+      - Package examples
+      - Package parameters
+      - Development environments
+      - Tutorials
+      - How-to guides
+      - Answers to questions
+      - Troubleshooting tips
+      - Function documentation
+      - Nix language functions
+      - Command-line interface
+      - Nix standalone installer
+      - NixOS installer
+      - Security notifications
+      - Source code (package)
+      - Source code (module)
+      - Source code (C++ Nix)
+      - Press information
+      - Reviews and testimonials
+      - Community updates
+      - Lore, jokes, memes
+      - Release notes
+      - Additional tools
+      - Job postings
+      - Paid support offers
   # Final question to get meta feedback on the survey from participants
   - prompt: How can we improve this survey?
     type: text
