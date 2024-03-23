@@ -69,27 +69,27 @@ questions:
       - Student
       - Developer, embedded applications or devices
       - Data scientist or machine learning specialist
-      - DevOps specialist
+      - Devops specialist
       - Academic researcher
-      - Research & Development role
-      - Senior Executive (C-Suite, VP, etc.)
+      - Research & development role
+      - Senior executive (c-suite, vp, etc.)
       - Engineer, data
       - Cloud infrastructure engineer
       - Developer, game or graphics
       - Data or business analyst
       - System administrator
       - Project manager
-      - Developer, QA or test
+      - Developer, qa or test
       - Security professional
       - Product manager
       - Engineer, site reliability
       - Educator
       - Scientist
-      - Developer Experience
-      - Hardware Engineer
+      - Developer experience
+      - Hardware engineer
       - Designer
       - Database administrator
-      - Developer Advocate
+      - Developer advocate
       - Marketing or sales professional
   - prompt: Which operating systems do you currently use?
     type: multiple
