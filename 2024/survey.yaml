@@ -291,13 +291,14 @@ questions:
     type: ranking
     choices:
       - Package search (package names, program names)
-      - Option search (option names, option documentation)
-      - Configuration examples
+      - NixOS option search (option names, option documentation)
+      - NixOS configuration examples
       - Package examples
       - Package parameters
       - Development environments
       - Tutorials
       - How-to guides
+      - Manuals
       - Answers to questions
       - Troubleshooting tips
       - Function documentation
@@ -309,6 +310,7 @@ questions:
       - Source code (package)
       - Source code (module)
       - Source code (C++ Nix)
+      - Discourse conversations
       - Press information
       - Reviews and testimonials
       - Community updates
@@ -317,6 +319,31 @@ questions:
       - Additional tools
       - Job postings
       - Paid support offers
+  - prompt: When you need to get help with Nix or NixOS, which resources do you use most often? (if you always start with a web search, choose which resources you go to most often among the results)
+    type: ranking
+    choices:
+      - nix.dev
+      - Manuals (Nix/Nixpkgs/NixOS)
+      - Discourse
+      - Matrix channels
+      - GitHub issues
+      - Mastodon
+      - Twitter
+      - Stackoverflow
+      - Discord (unofficial)
+      - Reddit (unofficial)
+      - Wiki (unofficial)
+      - Blog posts
+      - Others
+  - prompt: When you need to get help with Nix or NixOS, how often do you find an acceptable answer?
+    type: single
+    choices:
+      - Every time
+      - Between 99% - 90% of the time
+      - Between 90% - 75% of the time
+      - Between 75% - 50% of the time
+      - Between 50% - 25% of the time
+      - Rarely
   # Final question to get meta feedback on the survey from participants
   - prompt: How can we improve this survey?
     type: text
