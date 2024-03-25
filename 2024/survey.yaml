@@ -260,10 +260,9 @@ questions:
       - More than 20 years
   - prompt: Do you currently consider Nix as part of your usual set of tools?
     type: single
-    choice:
+    choices:
       - Yes
       - No
-
   # This question has been collapsed into one, so that we don't need conditional questions.
   - prompt: >
       If Nix is not part of your usual set of tools,
