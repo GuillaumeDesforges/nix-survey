@@ -253,11 +253,16 @@ questions:
       - VBA
       - Visual Basic (.Net)
       - Zig
-  - prompt: Do you use NixOS?
-    type: single
+  # Both query information about NixOS usage and the way people install Nix
+  - prompt: How did you install Nix?
+    type: multiple
     choices:
-      - Yes
-      - No
+      - NixOS
+      - With the official installer
+      - With another package manager
+      - With DeterminateSystems/nix-installer
+      - From source
+      - Other
   # This question has been collapsed into one, so that we don't need conditional questions.
   - prompt: >
       If you want to use NixOS but can't use NixOS,
