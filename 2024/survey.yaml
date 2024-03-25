@@ -253,7 +253,8 @@ questions:
       - VBA
       - Visual Basic (.Net)
       - Zig
-  # Both query information about NixOS usage and the way people install Nix
+  # Query information about the installation method.
+  # Also gives insight on the proportion of NixOS users since these would be the one who checked the `NixOS` box
   - prompt: How did you install Nix?
     type: multiple
     choices:
