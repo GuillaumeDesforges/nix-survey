@@ -196,7 +196,7 @@ questions:
       - Production servers
       - Mobile devices
       - Embedded/IoT devices
-  - prompt: Which version of Nix do you use? (only write the SemVer, e.g. "2.18.11")
+  - prompt: Which version of Nix do you use? (only write the SemVer, e.g. "2.18.11", get it with `nix-env --version`)
     type: text
   - prompt: For which ecosystems do you use Nix for?
     type: multiple
