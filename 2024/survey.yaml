@@ -3,6 +3,8 @@ intro: >
   Welcome to this year's Nix Community Survey!
   Please take 5-10 minutes to fill out this survey with info about yourself and how you use projects in the Nix ecosystem.
   We hope to use your responses to develop Nix, Nixpkgs, and NixOS to better match your needs and come up with new ideas for serving and growing the community.
+  Please note that when we only say "Nix" in a question, we refer to the Nix tool and/or language.
+  When we want to refer to Nixpkgs, NixOS, or the Nix ecosystem as a whole, we'll be clear with the terms.
 questions:
   - prompt: Where do you live?
     type: single
@@ -44,6 +46,7 @@ questions:
   - prompt: Including any education, how many years have you been coding in total?
     type: single
     choices:
+      - I don't code
       - Less than 1 year
       - 1 to 4 years
       - 5 to 9 years
@@ -96,46 +99,21 @@ questions:
     choices:
       - BSD
       - GNU/Linux
-      - MacOS
+      - MacOS/iOS
       - Windows
       - Android
-  - prompt: For how many years have you been using Nix in total?
-    type: single
-    choices:
-      - I have never used Nix
-      - Less than 1 year
-      - 1 to 2 years
-      - 2 to 3 years
-      - 3 to 5 years
-      - 5 to 10 years
-      - 10 to 15 years
-      - 15 to 20 years
-      - More than 20 years
-  - prompt: Which of these describe your involvement with the Nix ecosystem?
+  - prompt: Which of these best describe your involvement with the Nix ecosystem?
     type: multiple
     choices:
-      - I don't use Nix
+      - I don't use NixOS
+      - I use NixOS
+      - I manage or develop for machines running NixOS
       - I use Nix to install software
       - I develop software with Nix
       - I contribute packages or patches to Nixpkgs
       - I actively maintain packages in Nixpkgs
       - I have merge access to Nixpkgs
       - I develop a tool based on or integrating with Nix
-  - prompt: Do you currently consider Nix as part of your usual set of tools?
-    type: single
-    choices:
-      - Yes
-      - No
-  # This question has been collapsed into one, so that we don't need conditional questions.
-  - prompt: >
-      If Nix is not part of your usual set of tools,
-      please tell us what prevents it and what would help you.
-    type: text
-  - prompt: In which contexts do you currently use Nix?
-    type: multiple
-    choices:
-      - I use Nix for personal projects.
-      - I use Nix at work.
   - prompt: |
       Which user types do you identify with? Select all that apply:
     
@@ -181,7 +159,8 @@ questions:
       - E
   - prompt: On which operating systems do you use Nix currently?
     type: multiple
-    type: 
+    type:
+      - I don't use Nix
       - BSD
       - GNU/Linux
       - MacOS
@@ -190,6 +169,7 @@ questions:
   - prompt: In what environments do you use Nix?
     type: multiple
     choices:
+      - I don't use Nix
       - Laptops, Desktops, Workstations, Development machines
       - Home servers
       - Continuous integration servers
@@ -201,6 +181,8 @@ questions:
   - prompt: For which ecosystems do you use Nix for?
     type: multiple
     choices:
+      - I don't use Nix
+      - NixOS configurations
       # Taken from Stack Overflow survey, ordered alphabetically.
       - APL
       - Ada
@@ -257,13 +239,36 @@ questions:
   # Also gives insight on the proportion of NixOS users since these would be the one who checked the `NixOS` box
   - prompt: How did you install Nix?
     type: multiple
-    choices:
+     choices:
       - NixOS
       - With the official installer
       - With another package manager
       - With DeterminateSystems/nix-installer
       - From source
       - Other
+  - prompt: For how many years have you been using Nix in total?
+    type: single
+    choices:
+      - I don't use Nix
+      - Less than 1 year
+      - 1 to 2 years
+      - 2 to 3 years
+      - 3 to 5 years
+      - 5 to 10 years
+      - 10 to 15 years
+      - 15 to 20 years
+      - More than 20 years
+  - prompt: Do you currently consider Nix as part of your usual set of tools?
+    type: single
+    choice:
+      - Yes
+      - No
+
+  # This question has been collapsed into one, so that we don't need conditional questions.
+  - prompt: >
+      If Nix is not part of your usual set of tools,
+      please tell us what prevents it and what would help you.
+    type: text
   # This question has been collapsed into one, so that we don't need conditional questions.
   - prompt: >
       If you want to use NixOS but can't use NixOS,
