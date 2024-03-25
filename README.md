@@ -25,6 +25,7 @@ The _prompt_ is a short text presented to the participant to ask the question.
 _Choices_ can be either:
 - _multiple choices_: the user can select as many choices as they want from a list of proposed choices, and input free text in a "other" choice field
 - _single choice_: the user can only select one choice from a list of proposed choices, or input free text in a "other" choice field
+- _ranking_: the user can pick and rank items from a list, they can't input free text in a "other" field
 - _free text_: the user can input any text 
 
 ## Organization
