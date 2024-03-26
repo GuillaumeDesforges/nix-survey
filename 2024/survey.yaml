@@ -105,15 +105,13 @@ questions:
   - prompt: Which of these best describe your involvement with the Nix ecosystem?
     type: multiple
     choices:
-      - I don't use NixOS
-      - I use NixOS
-      - I manage or develop for machines running NixOS
       - I use Nix to install software
       - I develop software with Nix
       - I contribute packages or patches to Nixpkgs
       - I actively maintain packages in Nixpkgs
       - I have merge access to Nixpkgs
       - I develop a tool based on or integrating with Nix
+      - I manage or develop for machines running NixOS
   - prompt: |
       Which user types do you identify with? Select all that apply:
     
@@ -258,6 +256,11 @@ questions:
       - With DeterminateSystems/nix-installer
       - From source
       - Other
+  # This question has been collapsed into one, so that we don't need conditional questions.
+  - prompt: >
+      If you want to use NixOS but can't use NixOS,
+      please tell us what prevents it and what would help you.
+    type: text
   - prompt: For how many years have you been using Nix in total?
     type: single
     choices:
@@ -278,11 +281,6 @@ questions:
   # This question has been collapsed into one, so that we don't need conditional questions.
   - prompt: >
       If Nix is not part of your usual set of tools,
-      please tell us what prevents it and what would help you.
-    type: text
-  # This question has been collapsed into one, so that we don't need conditional questions.
-  - prompt: >
-      If you want to use NixOS but can't use NixOS,
       please tell us what prevents it and what would help you.
     type: text
   # This year, we try to assess how people discovered Nix
