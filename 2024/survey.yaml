@@ -317,6 +317,7 @@ questions:
       - Package examples
       - Package parameters
       - Development environments
+      - nix.dev
       - Tutorials
       - How-to guides
       - Manuals
@@ -348,6 +349,7 @@ questions:
       - Discourse
       - Matrix channels
       - GitHub issues
+      - Source code
       - Mastodon
       - Twitter
       - Stackoverflow
