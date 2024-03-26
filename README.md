@@ -78,6 +78,15 @@ Post on social medias: Reddit, Hacker News, Twitter/X, LinkedIn.
 
 Activate banner on the `nixos.org` website.
 
+Schedule reminders on social medias.
+For instance
+- 1 week after launch,
+- 1 month before closing,
+- 2 weeks before closing,
+- 1 week before closing,
+- 2 days before closing.
+- 1 days before closing.
+
 Wait for the closing date.
 
 #### Analysis
