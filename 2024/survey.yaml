@@ -360,7 +360,7 @@ questions:
     type: multiple
     choices:
       - I don't plan to contribute.
-      - Everything I want to contribute is already being worked on and I don't feel the need to get involved
+      - Everything I want to contribute to is already being worked on and I don't feel the need to get involved
       - I would like to contribute but I don't know how to get started.
       - My experience contributing was as expected.
       - I tried to contribute something but found it hard to get started.
