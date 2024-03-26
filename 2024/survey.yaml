@@ -359,7 +359,7 @@ questions:
   - prompt: If you want to contribute or have contributed in the past to Nixpkgs, please select all that apply:
     type: multiple
     choices:
-      - I don't want/need to contribute.
+      - I don't plan to contribute.
       - Everything I want to contribute is already being worked on and I don't feel the need to get involved
       - I don't know how to get started.
       - My experience contributing was as expected.
