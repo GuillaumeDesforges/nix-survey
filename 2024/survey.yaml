@@ -117,25 +117,34 @@ questions:
   - prompt: |
       Which user types do you identify with? Select all that apply:
     
-      - A. You love the idea behind Nix or NixOS. Maybe you spread the word among friends and coworkers. Maybe you are interested in or enthusiastic about any of the following:
+      - A. You love the idea behind Nix or NixOS.
+        Maybe you spread the word among friends and coworkers.
+        Maybe you are interested in or enthusiastic about any of the following:
           - Free and open source software
           - Linux
           - Home automation
           - Online communities
           - Distro-hopping
-      - B. You’re here because you’re curious about Nix and how it works. Maybe you enjoy or want to learn functional programming, or you just want to learn new things. Maybe you identify yourself as:
+      - B. You’re here because you’re curious about Nix and how it works.
+        Maybe you enjoy or want to learn functional programming,
+        or you just want to learn new things.
+        Maybe you identify yourself as:
           - Nix-curious developer
           - Student of a technical field
           - Educator
           - Academic researcher
-      - C. You use Nix or NixOS to get things done or boost your team’s productivity, you learn it to grow your career opportunities, or you have to use it on the job because someone said so. Maybe you identify yourself as:
+      - C. You use Nix or NixOS to get things done or boost your team’s productivity,
+        you learn it to grow your career opportunities,
+        or you have to use it on the job because someone said so.
+        Maybe you identify yourself as:
           - System administrator
           - Employee developer
           - DevOps engineer
           - Natural scientist
           - Open source software author
           - Early-career professional
-      - D. You work or want to work on the Nix ecosystem rather than just with it. You are at least one of the following:
+      - D. You work or want to work on the Nix ecosystem rather than just with it.
+        You are at least one of the following:
           - Aspiring contributor
           - Novice contributor
           - Drive-by contributor
@@ -143,7 +152,10 @@ questions:
           - Code owner
           - Community team member
           - Sponsor
-      - E. You make the strategic decisions for your team or company: which technologies to adopt, which skills to train your employees in, which projects to support or invest in, which services or products to offer. Maybe you’re a:
+      - E. You make the strategic decisions for your team or company:
+        which technologies to adopt, which skills to train your employees in,
+        which projects to support or invest in, which services or products to offer.
+        Maybe you’re a:
           - Entrepreneur
           - Team lead
           - Software architect
@@ -239,7 +251,7 @@ questions:
   # Also gives insight on the proportion of NixOS users since these would be the one who checked the `NixOS` box
   - prompt: How did you install Nix?
     type: multiple
-     choices:
+    choices:
       - NixOS
       - With the official installer
       - With another package manager
@@ -274,7 +286,9 @@ questions:
       please tell us what prevents it and what would help you.
     type: text
   # This year, we try to assess how people discovered Nix
-  - prompt: Did you hear about Nix or NixOS first? If you heard about both at the same time, select which one first made you interested in the Nix ecosystem.
+  - prompt: >
+      Did you hear about Nix or NixOS first?
+      If you heard about both at the same time, select which one first made you interested in the Nix ecosystem.
     type: single
     choices:
       - Nix
