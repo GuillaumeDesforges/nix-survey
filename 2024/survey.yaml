@@ -356,7 +356,7 @@ questions:
       - Wiki (unofficial)
       - Blog posts
       - Others
-  - prompt: If you want to contribute or has contributed in the past to Nixpkgs, please select all that apply:
+  - prompt: If you want to contribute or have contributed in the past to Nixpkgs, please select all that apply:
     type: multiple
     choices:
       - I don't want/need to contribute.
