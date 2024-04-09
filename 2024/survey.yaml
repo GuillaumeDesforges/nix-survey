@@ -270,6 +270,13 @@ questions:
       - 10 to 15 years
       - 15 to 20 years
       - More than 20 years
+  - prompt: How would you describe your skill level with Nix?
+    type: single
+    choices:
+      - I have never used Nix or I am just getting started
+      - Beginner
+      - Intermediate
+      - Advanced
   - prompt: Do you currently consider Nix as part of your usual set of tools?
     type: single
     choices:
