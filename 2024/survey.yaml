@@ -273,7 +273,7 @@ questions:
   - prompt: How would you describe your skill level with Nix?
     type: single
     choices:
-      - I have never used Nix or I am just getting started
+      - I have never used Nix
       - Beginner
       - Intermediate
       - Advanced
