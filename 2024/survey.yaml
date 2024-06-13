@@ -2,9 +2,9 @@ title: Nix Community Survey 2024
 intro: >
   Welcome to this year's Nix Community Survey!
   Please take 5-10 minutes to fill out this survey with info about yourself and how you use projects in the Nix ecosystem.
-  We hope to use your responses to develop Nix, Nixpkgs, and NixOS to better match your needs and come up with new ideas for serving and growing the community.
-  Please note that when we only say "Nix" in a question, we refer to the Nix tool and/or language.
-  When we want to refer to Nixpkgs, NixOS, or the Nix ecosystem as a whole, we'll be clear with the terms.
+  Your responses will help us develop Nix, Nixpkgs, and NixOS to better match your needs and come up with new ideas for serving and growing the community.
+  Please note that when we only say "Nix" in a question, we refer to the Nix command-line tool.
+  When we want to refer to the Nix language, Nixpkgs, NixOS, or the Nix ecosystem as a whole, we'll be clear with the terms.
 questions:
   - prompt: Where do you live?
     type: single
@@ -25,6 +25,7 @@ questions:
       - Middle East
       - Northern Africa
       - Southern Africa
+      - Prefer not to respond
   - prompt: What is your age?
     type: single
     choices:
@@ -35,7 +36,7 @@ questions:
       - 45-54 years old
       - 55-64 years old
       - 65 years or older
-      - Prefer not to say
+      - Prefer not to respond
   - prompt: How do you identify?
     type: single
     choices:
@@ -43,68 +44,65 @@ questions:
       - Woman
       - Non-binary/non-conforming
       - Prefer not to respond
-  - prompt: Including any education, how many years have you been coding in total?
+  - prompt: Including any education, how many years have you been programming in total?
     type: single
     choices:
-      - I don't code
+      - I never programmed
       - Less than 1 year
       - 1 to 4 years
       - 5 to 9 years
-      - 10 to 14 years
-      - 15 to 19 years
-      - 20 to 24 years
-      - 25 to 29 years
-      - 30 to 34 years
-      - 35 to 39 years
-      - 40 to 44 years
-      - 45 to 49 years
+      - 10 to 24 years
+      - 25 to 49 years
       - More than 50 years
-  - prompt: Which of the following describes your current job, the one you do most of the time?
+  - prompt: Which of the following describes your main occupation?
     type: single
-    choices: 
+    choices:
       # Taken from Stack Overflow survey, ordered by most replied to least replied.
       - Developer, full-stack
       - Developer, back-end
       - Developer, front-end
       - Developer, desktop or enterprise applications
       - Developer, mobile
-      - Engineering manager
-      - Student
       - Developer, embedded applications or devices
-      - Data scientist or machine learning specialist
-      - Devops specialist
-      - Academic researcher
-      - Research & development role
-      - Senior executive (c-suite, vp, etc.)
-      - Engineer, data
-      - Cloud infrastructure engineer
+      - Developer, quality assurance or testing
       - Developer, game or graphics
+      - Engineer, hardware
+      - Engineer, data
+      - Engineer, site reliability
+      - DevOps specialist
+      - Cloud infrastructure engineer
+      - Data scientist or machine learning specialist
       - Data or business analyst
       - System administrator
-      - Project manager
-      - Developer, qa or test
-      - Security professional
-      - Product manager
-      - Engineer, site reliability
-      - Educator
-      - Scientist
-      - Developer experience
-      - Hardware engineer
-      - Designer
       - Database administrator
+      - Security professional
+      - Academic researcher
+      - Research & development role
+      - Scientist
+      - Educator
+      - Project manager
+      - Engineering manager
+      - Senior executive (C-suite, VP, etc.)
+      - Product manager
+      - Developer experience
       - Developer advocate
+      - User experience
+      - Designer
       - Marketing or sales professional
+      - Student
   - prompt: Which operating systems do you currently use?
     type: multiple
     choices:
-      - BSD
       - GNU/Linux
-      - MacOS/iOS
+      - macOS
       - Windows
+      - BSD
+      - iOS
       - Android
   - prompt: Which of these best describe your involvement with the Nix ecosystem?
     type: multiple
     choices:
+      - I don't use Nix
       - I don't use NixOS
       - I use NixOS
       - I manage or develop for machines running NixOS
@@ -113,10 +111,9 @@ questions:
       - I contribute packages or patches to Nixpkgs
       - I actively maintain packages in Nixpkgs
       - I have merge access to Nixpkgs
-      - I develop a tool based on or integrating with Nix
+      - I develop a tool based on or integrating with Nix, Nixpkgs, or NixOS
   - prompt: |
       Which user types do you identify with? Select all that apply:
-    
       - A. You love the idea behind Nix or NixOS.
         Maybe you spread the word among friends and coworkers.
         Maybe you are interested in or enthusiastic about any of the following:
@@ -173,16 +170,16 @@ questions:
     type: multiple
     type:
       - I don't use Nix
-      - BSD
       - GNU/Linux
-      - MacOS
+      - macOS
       - Windows (via WSL)
+      - BSD
       - Android
   - prompt: In what environments do you use Nix?
     type: multiple
     choices:
       - I don't use Nix
-      - Laptops, Desktops, Workstations, Development machines
+      - Laptops, desktops, workstations, development machines
       - Home servers
       - Continuous integration servers
       - Production servers
@@ -267,9 +264,7 @@ questions:
       - 2 to 3 years
       - 3 to 5 years
       - 5 to 10 years
-      - 10 to 15 years
-      - 15 to 20 years
-      - More than 20 years
+      - 10 to 20 years
   - prompt: How would you describe your skill level with Nix?
     type: single
     choices:
@@ -311,7 +306,7 @@ questions:
       - Hacker News
       - Twitter/X
       - LinkedIn
-      - Other social medias
+      - Other social media
       - On a blog
       - Academic Research (referenced in paper, conference talk)
       - Searching (e.g. on Google)
@@ -370,8 +365,8 @@ questions:
     choices:
       - I don't plan to contribute.
       - Everything I want to contribute to is already being worked on and I don't feel the need to get involved.
-      - I would like to contribute but I don't know how to get started.
-      - I tried to contribute something but got stuck after I started.
+      - I would like to contribute, but I don't know how to get started.
+      - I tried to contribute something, but got stuck after I started.
       - I received unhelpful feedback.
       - It took longer than I expected to receive feedback.
       - I want to get involved in something being worked on, but don't know how to start.
@@ -382,11 +377,11 @@ questions:
     type: single
     choices:
       - Every time
-      - Between 99% - 90% of the time
-      - Between 90% - 75% of the time
-      - Between 75% - 50% of the time
-      - Between 50% - 25% of the time
-      - Rarely
+      - Almost every time
+      - Most of the time
+      - Half of the time
+      - Sometimes
+      - Almost never
   # Final question to get meta feedback on the survey from participants
   - prompt: How can we improve this survey?
     type: text
