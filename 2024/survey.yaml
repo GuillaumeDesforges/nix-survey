@@ -369,17 +369,18 @@ questions:
     type: ranking
     choices:
       - nix.dev
-      - Manuals (Nix/Nixpkgs/NixOS)
+      - Reference manuals (Nix/Nixpkgs/NixOS)
+      - NixOS Wiki (wiki.nixos.org, official)
       - Discourse
       - Matrix channels
       - GitHub issues
       - Source code
       - Mastodon
       - Twitter
-      - Stackoverflow
+      - Stack Overflow
       - Discord (unofficial)
       - Reddit (unofficial)
-      - Wiki (unofficial)
+      - Wiki (nixos.wiki, unofficial)
       - Blog posts
       - Others
   - prompt: If you want to contribute or have contributed in the past to Nixpkgs, please select all that apply:
