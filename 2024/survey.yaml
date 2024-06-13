@@ -112,6 +112,46 @@ questions:
       - I actively maintain packages in Nixpkgs
       - I have merge access to Nixpkgs
       - I develop a tool based on or integrating with Nix, Nixpkgs, or NixOS
+  - prompt: For how many years have you been using Nix in total?
+    type: single
+    choices:
+      - I don't use Nix
+      - Less than 1 year
+      - 1 to 2 years
+      - 2 to 3 years
+      - 3 to 5 years
+      - 5 to 10 years
+      - 10 to 20 years
+  - prompt: How would you describe your skill level with Nix?
+    type: single
+    choices:
+      - I have never used Nix
+      - Beginner
+      - Intermediate
+      - Advanced
+  # This year, we try to assess how people discovered Nix
+  - prompt: >
+      Did you hear about Nix or NixOS first?
+      If you heard about both at the same time, select which one first made you interested in the Nix ecosystem.
+    type: single
+    choices:
+      - Nix
+      - NixOS
+  - prompt: How did you find out about it?
+    type: single
+    choices:
+      - At work
+      - In my education (School/University/...)
+      - From a friend
+      - YouTube
+      - Reddit
+      - Hacker News
+      - Twitter/X
+      - LinkedIn
+      - Other social media
+      - On a blog
+      - Academic Research (referenced in paper, conference talk)
+      - Searching (e.g. on Google)
   - prompt: |
       Which user types do you identify with? Select all that apply:
       - A. You love the idea behind Nix or NixOS.
@@ -161,11 +201,11 @@ questions:
           - Public service administrator
     type: multiple
     choices:
-      - A
-      - B
-      - C
-      - D
-      - E
+      - A. I love the idea behind Nix
+      - B. I'm curious how Nix works
+      - C. I use Nix to get things done
+      - D. I (want to) work on Nix
+      - E. I'm a decision-maker
   - prompt: On which operating systems do you use Nix currently?
     type: multiple
     type:
@@ -175,6 +215,17 @@ questions:
       - Windows (via WSL)
       - BSD
       - Android
+  # Query information about the installation method.
+  # Also gives insight on the proportion of NixOS users since these would be the one who checked the `NixOS` box
+  - prompt: How did you install Nix?
+    type: multiple
+    choices:
+      - NixOS
+      - With the official installer
+      - With another package manager
+      - With DeterminateSystems/nix-installer
+      - From source
+      - Other
   - prompt: In what environments do you use Nix?
     type: multiple
     choices:
@@ -187,7 +238,17 @@ questions:
       - Embedded/IoT devices
   - prompt: Which version of Nix do you use? (only write the SemVer, e.g. "2.18.11", get it with `nix-env --version`)
     type: text
-  - prompt: For which ecosystems do you use Nix for?
+  - prompt: Which NixOS releases do you use?
+    type: multiple
+    choices:
+      - unstable
+      - 24.05
+      - 23.11
+      - 23.05
+      - older
+      - I don't know
+      - I don't use NixOS
+  - prompt: Which software ecosystems do you use Nix with?
     type: multiple
     choices:
       - I don't use Nix
@@ -244,34 +305,28 @@ questions:
       - VBA
       - Visual Basic (.Net)
       - Zig
-  # Query information about the installation method.
-  # Also gives insight on the proportion of NixOS users since these would be the one who checked the `NixOS` box
-  - prompt: How did you install Nix?
+  - prompt: Which Nix experimental features do you use?
     type: multiple
     choices:
-      - NixOS
-      - With the official installer
-      - With another package manager
-      - With DeterminateSystems/nix-installer
-      - From source
-      - Other
-  - prompt: For how many years have you been using Nix in total?
-    type: single
-    choices:
-      - I don't use Nix
-      - Less than 1 year
-      - 1 to 2 years
-      - 2 to 3 years
-      - 3 to 5 years
-      - 5 to 10 years
-      - 10 to 20 years
-  - prompt: How would you describe your skill level with Nix?
-    type: single
-    choices:
-      - I have never used Nix
-      - Beginner
-      - Intermediate
-      - Advanced
+      - Automatic UID allocation (`auto-allocate-uids`)
+      - Content-addressed derivations (`ca-derivations`)
+      - Use cgroups in execution environments (Linux) (`cgroups`)
+      - Allow impure environment variables in the execution environment (`configurable-impure-env`)
+      - Allow forcing trust settings for the Nix daemon (`daemon-trust-override`)
+      - Dynamic derivations (`dynamic-derivations`)
+      - `builtins.fetchClosure` (`fetch-closure`)
+      - `builtins.fetchTree` (`fetch-tree`)
+      - Flakes (`flakes`)
+      - Git hashing for store objects (`git-hashing`)
+      - Impure derivations (`impure-derivations`)
+      - Local overlay store (`local-overlay-store`)
+      - Mounted SSH store (`mounted-ssh-store`)
+      - `nix` command line tools (`nix-command`)
+      - Disallow literal URL (`no-url-literals`)
+      - Allow parsing timestamps in `builtins.fromTOML` (`parse-toml-timestamps`)
+      - Allow `read-only` on local stores `(`read-only-local-store`)
+      - Allow derivation builders to call Nix (`recursive-nix`)
+      - Verify Git commit signatures with `builtins.fetchGit` (`verified-fetches`)
   - prompt: Do you currently consider Nix as part of your usual set of tools?
     type: single
     choices:
@@ -287,29 +342,6 @@ questions:
       If you want to use NixOS but can't use NixOS,
       please tell us what prevents it and what would help you.
     type: text
-  # This year, we try to assess how people discovered Nix
-  - prompt: >
-      Did you hear about Nix or NixOS first?
-      If you heard about both at the same time, select which one first made you interested in the Nix ecosystem.
-    type: single
-    choices:
-      - Nix
-      - NixOS
-  - prompt: How did you find out about it?
-    type: single
-    choices:
-      - At work
-      - In my education (School/University/...)
-      - From a friend
-      - YouTube
-      - Reddit
-      - Hacker News
-      - Twitter/X
-      - LinkedIn
-      - Other social media
-      - On a blog
-      - Academic Research (referenced in paper, conference talk)
-      - Searching (e.g. on Google)
   - prompt: Which objects do you interact with or search for most often across the ecosystem?
     type: ranking
     choices:
@@ -347,17 +379,18 @@ questions:
     type: ranking
     choices:
       - nix.dev
-      - Manuals (Nix/Nixpkgs/NixOS)
+      - Reference manuals (Nix/Nixpkgs/NixOS)
+      - NixOS Wiki (wiki.nixos.org, official)
       - Discourse
       - Matrix channels
       - GitHub issues
       - Source code
       - Mastodon
       - Twitter
-      - Stackoverflow
+      - Stack Overflow
       - Discord (unofficial)
       - Reddit (unofficial)
-      - Wiki (unofficial)
+      - Wiki (nixos.wiki, unofficial)
       - Blog posts
       - Others
   - prompt: If you want to contribute or have contributed in the past to Nixpkgs, please select all that apply:
