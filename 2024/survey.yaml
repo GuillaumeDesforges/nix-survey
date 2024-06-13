@@ -161,11 +161,11 @@ questions:
           - Public service administrator
     type: multiple
     choices:
-      - A
-      - B
-      - C
-      - D
-      - E
+      - A. I love the idea behind Nix
+      - B. I'm curious how Nix works
+      - C. I use Nix to get things done
+      - D. I (want to) work on Nix
+      - E. I'm a decision-maker
   - prompt: On which operating systems do you use Nix currently?
     type: multiple
     type:
