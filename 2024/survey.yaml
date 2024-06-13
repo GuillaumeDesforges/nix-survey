@@ -246,6 +246,28 @@ questions:
       - Zig
   # Query information about the installation method.
   # Also gives insight on the proportion of NixOS users since these would be the one who checked the `NixOS` box
+  - prompt: Which Nix experimental features do you use?
+    type: multiple
+    choices:
+      - Automatic UID allocation (`auto-allocate-uids`)
+      - Content-addressed derivations (`ca-derivations`)
+      - Use cgroups in execution environments (Linux) (`cgroups`)
+      - Allow impure environment variables in the execution environment (`configurable-impure-env`)
+      - Allow forcing trust settings for the Nix daemon (`daemon-trust-override`)
+      - Dynamic derivations (`dynamic-derivations`)
+      - `builtins.fetchClosure` (`fetch-closure`)
+      - `builtins.fetchTree` (`fetch-tree`)
+      - Flakes (`flakes`)
+      - Git hashing for store objects (`git-hashing`)
+      - Impure derivations (`impure-derivations`)
+      - Local overlay store (`local-overlay-store`)
+      - Mounted SSH store (`mounted-ssh-store`)
+      - `nix` command line tools (`nix-command`)
+      - Disallow literal URL (`no-url-literals`)
+      - Allow parsing timestamps in `builtins.fromTOML` (`parse-toml-timestamps`)
+      - Allow `read-only` on local stores `(`read-only-local-store`)
+      - Allow derivation builders to call Nix (`recursive-nix`)
+      - Verify Git commit signatures with `builtins.fetchGit` (`verified-fetches`)
   - prompt: How did you install Nix?
     type: multiple
     choices:
