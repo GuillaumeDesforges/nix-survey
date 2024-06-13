@@ -187,6 +187,16 @@ questions:
       - Embedded/IoT devices
   - prompt: Which version of Nix do you use? (only write the SemVer, e.g. "2.18.11", get it with `nix-env --version`)
     type: text
+  - prompt: Which NixOS releases do you use?
+    type: multiple
+    choices:
+      - unstable
+      - 24.05
+      - 23.11
+      - 23.05
+      - older
+      - I don't know
+      - I don't use NixOS
   - prompt: For which ecosystems do you use Nix for?
     type: multiple
     choices:
