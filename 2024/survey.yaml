@@ -208,7 +208,7 @@ questions:
       - E. I'm a decision-maker
   - prompt: On which operating systems do you use Nix currently?
     type: multiple
-    type:
+    choices:
       - I don't use Nix
       - GNU/Linux
       - macOS
@@ -308,25 +308,25 @@ questions:
   - prompt: Which Nix experimental features do you use?
     type: multiple
     choices:
-      - Automatic UID allocation (`auto-allocate-uids`)
-      - Content-addressed derivations (`ca-derivations`)
-      - Use cgroups in execution environments (Linux) (`cgroups`)
-      - Allow impure environment variables in the execution environment (`configurable-impure-env`)
-      - Allow forcing trust settings for the Nix daemon (`daemon-trust-override`)
-      - Dynamic derivations (`dynamic-derivations`)
-      - `builtins.fetchClosure` (`fetch-closure`)
-      - `builtins.fetchTree` (`fetch-tree`)
-      - Flakes (`flakes`)
-      - Git hashing for store objects (`git-hashing`)
-      - Impure derivations (`impure-derivations`)
-      - Local overlay store (`local-overlay-store`)
-      - Mounted SSH store (`mounted-ssh-store`)
-      - `nix` command line tools (`nix-command`)
-      - Disallow literal URL (`no-url-literals`)
-      - Allow parsing timestamps in `builtins.fromTOML` (`parse-toml-timestamps`)
-      - Allow `read-only` on local stores `(`read-only-local-store`)
-      - Allow derivation builders to call Nix (`recursive-nix`)
-      - Verify Git commit signatures with `builtins.fetchGit` (`verified-fetches`)
+      - "Automatic UID allocation (`auto-allocate-uids`)"
+      - "Content-addressed derivations (`ca-derivations`)"
+      - "Use cgroups in execution environments (Linux) (`cgroups`)"
+      - "Allow impure environment variables in the execution environment (`configurable-impure-env`)"
+      - "Allow forcing trust settings for the Nix daemon (`daemon-trust-override`)"
+      - "Dynamic derivations (`dynamic-derivations`)"
+      - "`builtins.fetchClosure` (`fetch-closure`)"
+      - "`builtins.fetchTree` (`fetch-tree`)"
+      - "Flakes (`flakes`)"
+      - "Git hashing for store objects (`git-hashing`)"
+      - "Impure derivations (`impure-derivations`)"
+      - "Local overlay store (`local-overlay-store`)"
+      - "Mounted SSH store (`mounted-ssh-store`)"
+      - "`nix` command line tools (`nix-command`)"
+      - "Disallow literal URL (`no-url-literals`)"
+      - "Allow parsing timestamps in `builtins.fromTOML` (`parse-toml-timestamps`)"
+      - "Allow `read-only` on local stores `(`read-only-local-store`)"
+      - "Allow derivation builders to call Nix (`recursive-nix`)"
+      - "Verify Git commit signatures with `builtins.fetchGit` (`verified-fetches`)"
   - prompt: Do you currently consider Nix as part of your usual set of tools?
     type: single
     choices:
@@ -375,7 +375,10 @@ questions:
       - Additional tools
       - Job postings
       - Paid support offers
-  - prompt: When you need to get help with Nix or NixOS, which resources do you use most often? (if you always start with a web search, choose which resources you go to most often among the results)
+  - prompt: >
+      When you need to get help with Nix or NixOS,
+      which resources do you use most often?
+      (if you always start with a web search, choose which resources you go to most often among the results)
     type: ranking
     choices:
       - nix.dev
@@ -393,7 +396,9 @@ questions:
       - Wiki (nixos.wiki, unofficial)
       - Blog posts
       - Others
-  - prompt: If you want to contribute or have contributed in the past to Nixpkgs, please select all that apply:
+  - prompt: >
+      If you want to contribute or have contributed in the past to Nixpkgs,
+      please select all that apply:
     type: multiple
     choices:
       - I don't plan to contribute.
