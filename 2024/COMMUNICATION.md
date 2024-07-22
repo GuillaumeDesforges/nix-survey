@@ -11,7 +11,7 @@ https://survey.nixos.org/2024
 We are conducting this survey to improve our understanding of the community and what everyone cares about.
 We plan to use your responses to support Nix Teams to better serve the community.
 
-As always, the survey is **anonymous**
+As always, the survey is **anonymous**.
 Aggregated statistics and major findings will be published on Discourse.
 
 Check out the announcements and results from past years:
