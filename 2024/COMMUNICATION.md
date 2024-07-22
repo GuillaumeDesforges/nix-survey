@@ -9,9 +9,10 @@ It is with excitement that we launch 2024's Nix Survey!
 https://survey.nixos.org/2024
 
 We are conducting this survey to improve our understanding of the community and what everyone cares about.
-We hope to use your responses to support Nix Teams in best serving the community.
+We plan to use your responses to support Nix Teams to better serve the community.
 
-As always, the survey is **anonymous**, and aggregated statistics and major findings will be published on Discourse.
+As always, the survey is **anonymous**
+Aggregated statistics and major findings will be published on Discourse.
 
 Check out the announcements and results from past years:
 - [Nix Community Survey 2023](https://discourse.nixos.org/t/nix-community-survey-2023/28988/1)
