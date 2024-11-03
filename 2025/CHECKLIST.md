@@ -1,0 +1,48 @@
+# Community Survey 2025 checklist
+
+
+- [ ] Continue documenting the process of running the survey in a version controlled repository
+    - purpose: make the process outlast the volunteer team members (who are likely to drop out eventually)
+    - https://github.com/GuillaumeDesforges/nix-survey
+- [ ] Design the survey questions
+    - [ ] Ask community teams what information they need
+        - [ ] Nix maintainers
+        - [ ] Documentation
+        - [ ] Nixpkgs Architecture
+        - [ ] NixOS release managers
+        - [ ] Moderation
+        - [ ] Infrastructure
+        - [ ] Security
+        - [ ] Governance
+    - limited count (e.g. max 4)
+    - only yes/no, categorical or multiple choice
+        - no ranking, they are confusing
+        - no open-ended question, they are costly to analyze (ask @fricklerhandwerk)
+    - no conditionality/branching
+    - group questions per persona?
+        - users
+        - package maintainers
+        - core contributors
+- [ ] Refine objectives
+    - sex/Gender question
+        - refine it?
+        - remove it?
+            - what StackOverflow did
+- [ ] Get reviews of the draft (e.g. in a GitHub repo) by community teams
+- [ ] Implement the survey
+- [ ] Open the survey
+- [ ] Write announcement
+- [ ] Put a banner on the front page of the official websites
+    - [ ] nixos.org
+    - [ ] nix.dev
+    - [ ] wiki.nixos.org
+    - [ ] discourse.nixos.org
+    - [ ] search.nixos.org
+- [ ] Social media outreach
+    - [ ] Reddit
+    - [ ] Twitter
+    - [ ] Mailinglist
+    - [ ] Hacker News
+    - [ ] Private/unofficial channels
+- [ ] Make analysis and write up evaluation
+- [ ] Post results
