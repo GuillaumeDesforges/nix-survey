@@ -45,4 +45,5 @@
     - [ ] Hacker News
     - [ ] Private/unofficial channels
 - [ ] Make analysis and write up evaluation
+    - Improve charts for color blindness
 - [ ] Post results
