@@ -14,16 +14,20 @@
         - [ ] Infrastructure
         - [ ] Security
         - [ ] Governance
+        - [ ] (check for new teams)
     - limited count (e.g. max 4)
     - only yes/no, categorical or multiple choice
-        - no ranking, they are confusing
-        - no open-ended question, they are costly to analyze (ask @fricklerhandwerk)
+        - use ranking questions sparingly, too many options are confusing
+        - limit to one open-ended question, they are costly to analyze (ask @fricklerhandwerk)
+        - always add "other" field to selections
     - no conditionality/branching
+      - if there are conditional questions, consider splitting out a special-purpose survey
     - group questions per persona?
         - users
         - package maintainers
         - core contributors
 - [ ] Refine objectives
+    - what do we want to do with the data?
     - sex/Gender question
         - refine it?
         - remove it?
