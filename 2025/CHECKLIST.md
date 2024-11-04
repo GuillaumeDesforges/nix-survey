@@ -19,7 +19,6 @@
     - only yes/no, categorical or multiple choice
         - use ranking questions sparingly, too many options are confusing
         - limit to one open-ended question, they are costly to analyze (ask @fricklerhandwerk)
-        - always add "other" field to selections
     - no conditionality/branching
       - if there are conditional questions, consider splitting out a special-purpose survey
     - group questions per persona?
